@@ -1,0 +1,21 @@
+[toolchain]
+
+[features]
+seeds = false
+skip-lint = false
+
+[programs.localnet]
+todo = "8AL9PWiaK7GWTDvDq3A6ob3VqGLFCro6rKdReTZK4g1T"
+
+[programs.devnet]
+todo = "8AL9PWiaK7GWTDvDq3A6ob3VqGLFCro6rKdReTZK4g1T"
+
+[registry]
+url = "https://api.apr.dev"
+
+[provider]
+cluster = "devnet"
+wallet = "/home/spiff/.config/solana/id.json"
+
+[scripts]
+test = "yarn run ts-mocha -p ./tsconfig.json -t 1000000 tests/**/*.ts"
